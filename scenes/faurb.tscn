@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cel1myu1cuieb"]
+
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/programadora.tscn" id="3"]
+
+[node name="faurb" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1")]
+position = Vector2(202, 165)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+zoom = Vector2(3, 3)
+
+[node name="programadora" parent="." instance=ExtResource("3")]
+position = Vector2(304, 153)

@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/npc.gd" type="Script" id=1]
+[ext_resource path="res://assets/sprites/programador/programadora_idle.png" type="Texture2D" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 20, 42 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 7, 16.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 9, 19.5 )
+
+[node name="programadora" type="CharacterBody2D"]
+script = ExtResource( 1 )
+dialog = "dialog_1"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+frames = SubResource( 2 )
+animation = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+show_behind_parent = true
+position = Vector2( 0, 0.5 )
+shape = SubResource( 3 )
+
+[node name="interaction_area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interaction_area"]
+modulate = Color( 0.121569, 0.121569, 0.121569, 1 )
+position = Vector2( 0, 0.5 )
+shape = SubResource( 4 )
+
+[connection signal="body_entered" from="interaction_area" to="." method="_on_interaction_area_body_entered"]
+[connection signal="body_exited" from="interaction_area" to="." method="_on_interaction_area_body_exited"]
