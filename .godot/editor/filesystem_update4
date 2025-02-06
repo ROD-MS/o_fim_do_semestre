@@ -1,11 +1,7 @@
-res://addons/dialogic/Localization/dialogic.zh_CN.translation
-res://addons/dialogic/Localization/dialogic.en.translation
-res://addons/dialogic/Localization/dialogic.es.translation
-res://addons/dialogic/Localization/dialogic.fr.translation
-res://addons/dialogic/Localization/dialogic.de.translation
 res://default_env.tres
 res://scenes/faurb.tscn
-res://addons/dialogic/Editor/Events/styles/InputFieldsStyle.tres
-res://scripts/npc.gd
-res://timelines/dialog_1.dtl
-res://characters/programadora.dch
+res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_default_panel.tres
+res://styles/npc/style_npc.tres
+res://styles/player/style_player.tres
+res://styles/npc/VisualNovelTextbox/custom_visual_novel_textbox.tscn
+res://styles/player/VisualNovelTextbox/custom_visual_novel_textbox.tscn

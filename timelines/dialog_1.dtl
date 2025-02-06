@@ -1,2 +1,7 @@
-join programadora (triste) left [animation="Fade In"]
-programadora: quero cafeeeeeeeeê
+join programadora (triste) right [animation="Fade In"]
+[style name="style_npc"]
+programadora (triste): quero cafeeeeeeeeé
+programadora (neutro): AGORAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+join prota_artista left
+[style name="style_player"]
+prota_artista: JÁ VOU TRAZEEEEEEEEEEEEER

@@ -22,7 +22,8 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"programadora": "res://characters/programadora.dch"
+"programadora": "res://characters/programadora.dch",
+"prota_artista": "res://characters/prota_artista.dch"
 }
 directories/dtl_directory={
 "dialog_1": "res://timelines/dialog_1.dtl"
@@ -47,6 +48,12 @@ choices/reveal_by_input=false
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
+glossary/default_case_sensitive=true
+layout/style_list=["res://styles/npc/style_npc.tres", "res://styles/player/style_player.tres"]
+layout/default_style="res://styles/npc/style_npc.tres"
+variables={}
+text/input_action="action"
+animations/join_default="Fade In"
 
 [editor_plugins]
 
